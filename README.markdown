@@ -10,17 +10,17 @@ You may need to run `git-submodule update` to get the documentation too.
 This repository doesn't include a `settings.php` for obvious computer-specific
 reasons. Create your own. No database stuff needed.
 
-There are three additional constants that need to be defined:
-**`PAGE_CACHE`**, **`PAGE_SOURCE`** and **`MARKDOWN_FILE`**.
+There are three additional constants that need to be defined: `PAGE_CACHE`,
+`PAGE_SOURCE` and `MARKDOWN_FILE`.
 
-**`PAGE_CACHE**` is a directory where the web server can write its page cache.
-In Linux, this means a full `0777`-access.
+`PAGE_CACHE` is a directory where the web server can write its page cache. In
+Linux, this means a full `0777`-access, or you'll get a whole slew of errors.
 
-**`PAGE_SOURCE`** is where the manual pages are. In this case, it's
+`PAGE_SOURCE` is where the manual pages are. In this case, it's
 "`LF_PROJECT_PATH.'/lightframe-documentation'`".
 
-**`MARKDOWN_FILE`** is the exact location of markdown.php from [my extra
-special edition of PHP Markdown
+`MARKDOWN_FILE` is the exact location of markdown.php from [my extra special
+edition of PHP Markdown
 Extra](http://github.com/wolfie/php-markdown/tree/extra). I guess I could
 include it as a submodule, but I can't be bothered right now
 

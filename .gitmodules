@@ -1,0 +1,3 @@
+[submodule "lightframe-documentation"]
+	path = lightframe-documentation
+	url = git://github.com/wolfie/lightframe-documentation.git

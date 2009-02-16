@@ -1,0 +1,189 @@
+/*
+http://kuler.adobe.com/#themeID/331951
+
+#8e1b13 - red
+#f9e4b3 - sand/flesh
+#849689 - light cyan/gray
+#46464a - darker gray
+#29232e - dark gray
+*/
+
+html {
+	background-color: black;
+}
+
+body {
+	font-family: sans-serif;
+	color: #849689;
+}
+
+#bd {
+	padding: 10px;
+}
+
+#bd, footer {
+	background-color: #29232e;
+}
+
+#bd p {
+	line-height: 150%;
+	padding-left: 0.5em;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 110%;
+	font-weight: normal;
+	margin-left: 0.5em;
+}
+
+h3 {
+	font-size: 100%;
+	font-weight: normal;
+	margin-left: 2em;
+	font-style: italic;
+}
+
+a, code, dt {
+	color: #a6b8ab;
+}
+
+h1, h2, h3, h4, h5, h6, a.hidden-selflink, a.hidden-selflink:hover {
+	color: #f9e4b3;
+}
+
+a.external:after {
+	content: "\207a" /*"\2192"; /* &rarr; */
+/*	
+  font-size: 50%;
+	position: relative;
+	bottom: 1em;
+	*/
+}
+
+dt {
+	border-bottom: 1px solid #46464a;
+}
+
+a:hover {
+	color: #eafbef;
+}
+
+pre {
+	background-color: #46464A;
+	padding: 10px;
+	border-left: 2px solid #849689;
+	overflow: auto;
+}
+
+dt {
+	font-weight: bold;
+	border-bottom-width: 2px;
+	border-bottom-line: solid;
+}
+
+#ft {
+	border-top: 2px solid #4c454f;
+	font-size: smaller;
+}
+
+#ft div {
+	text-align: center !important;
+}
+
+.footer-text {
+	padding-top: 10px;
+	font-size: smaller;
+	font-style: italic;
+}
+
+.footer-copyright {
+	padding: 10px 0;
+}
+
+.hidden-selflink {
+	text-decoration: none;
+	margin-left: 0.5em;
+	
+	visibility: hidden;
+}
+
+a.hidden-selflink {
+	opacity: 0.5;
+}
+
+a.hidden-selflink:hover {
+	opacity: 1;
+}
+
+h1:hover .hidden-selflink,
+h2:hover .hidden-selflink,
+h3:hover .hidden-selflink,
+h4:hover .hidden-selflink,
+h5:hover .hidden-selflink,
+h6:hover .hidden-selflink
+{
+	visibility: visible;
+}
+
+abbr {
+	border-bottom: 1px dashed;
+}
+
+strong {
+	/* for some reason, YUI reset's em's font-size:normal supersedes everything */
+	font-weight: bold;
+}
+
+.footnotes {
+	font-size: smaller;
+}
+
+.footnotes p {
+	line-height: 100%;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	
+	margin-left: 10px;
+}
+
+nav ul ul {
+	font-size:smaller;
+}
+
+nav li > * {
+	display: block;
+	padding: 2px;
+}
+
+nav > div {
+	margin-bottom: 10px;
+}
+
+#c {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background-color: #46464A;
+	padding: 10px;
+	display: none;
+	opacity: 0.9;
+}
+
+#close {
+	cursor: pointer;
+	padding: 10px;
+}
+
+#c textarea {
+	width: 90%;
+	background: none;
+	color: white;
+}

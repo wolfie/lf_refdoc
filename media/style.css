@@ -25,7 +25,7 @@ body {
 	background-color: #29232e;
 }
 
-#bd p {
+#bd p, .yui-main li {
 	line-height: 150%;
 	padding-left: 0.5em;
 }
@@ -51,7 +51,21 @@ a, code, dt {
 	color: #a6b8ab;
 }
 
-h1, h2, h3, h4, h5, h6, a.hidden-selflink, a.hidden-selflink:hover {
+code {
+	font-size: 120%;
+}
+
+pre > code {
+	font-size: 100%;
+}
+
+h1, h1 *,
+h2, h2 *,
+h3, h3 *,
+h4, h4 *,
+h5, h5 *,
+h6, h6 *,
+a.hidden-selflink, a.hidden-selflink:hover {
 	color: #f9e4b3;
 }
 

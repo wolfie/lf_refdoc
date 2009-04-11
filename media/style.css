@@ -201,3 +201,17 @@ nav > div {
 	background: none;
 	color: white;
 }
+
+blockquote {
+	border: 2px solid #46464a;
+	margin: 0 0.5em 1em 0.5em;
+	padding: 0.5em 0.5em 0.5em 1em;
+}
+
+blockquote p {
+	margin-bottom: 1em;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}

@@ -147,10 +147,14 @@ function buildIndex($html) {
 		}
 		
 		for ($i=0; $i<count($menu); $i++) {
-			if (isset($info[$i-1])
-					&& $info[$i]['depth'] < $info[$i-1]['depth']) {
-				array_push($menu[$i-1],'</ul>');
-				$uls--;
+			if (isset($info[$i-1])) {
+				$difference = $info[$i-1]['depth'] - $info[$i]['depth'];
+
+				while ($difference > 0) {
+					array_push($menu[$i-1],'</ul>');
+					$uls--;
+					$difference--;
+				}
 			}
 			
 			if (isset($info[$i+1]) 
